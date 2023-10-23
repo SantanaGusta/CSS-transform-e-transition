@@ -1,0 +1,40 @@
+/* Estilos para o relógio */
+.clock {
+    width: 200px;
+    height: 200px;
+    background-color: #f1c40f;
+    border-radius: 50%;
+    position: relative;
+    animation: rotateClock 60s linear infinite;
+}
+
+/* Estilos para o ponteiro dos segundos */
+.second-hand {
+    width: 2px;
+    height: 90px;
+    background-color: #e74c3c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: top center;
+    transform: translateX(-50%);
+    animation: rotateSecondHand 60s linear infinite;
+}
+
+@keyframes rotateClock {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateSecondHand {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

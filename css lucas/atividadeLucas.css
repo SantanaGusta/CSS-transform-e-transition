@@ -1,0 +1,68 @@
+/* Estilos para o Exercício 1 - Botão de Destaque */
+.highlight-button {
+    width: 100px;
+    height: 40px;
+    background-color: #3498db;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.highlight-button:hover {
+    transform: scale(1.1);
+    background-color: #e74c3c;
+}
+
+/* Estilos para o Exercício 2 - Carta Virada */
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: #3498db;
+    transition: transform 1s ease;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+/* Estilos para o Exercício 3 - Animação de Rotação de Relógio */
+.clock {
+    width: 100px;
+    height: 100px;
+    background-color: #f1c40f;
+    border-radius: 50%;
+    position: relative;
+    animation: rotateClock 60s linear infinite;
+}
+
+@keyframes rotateClock {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Estilos para o Exercício 4 - Mousedown */
+.resize-on-click {
+    width: 100px;
+    height: 100px;
+    background-color: #27ae60;
+    transition: all 0.3s ease;
+}
+
+.resize-on-click:active {
+    transform: scale(1.2);
+}
+
+/* Estilos para o Exercício 5 - Formulário */
+input {
+    width: 200px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    transform: scale(1.1);
+    background-color: #e74c3c;
+}
